@@ -2,12 +2,20 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
+import requests
 from datetime import datetime
 
 # --- Load Model ---
 @st.cache_resource
 def load_model():
-    return joblib.load('sales_forecaster_xgb_v1.pkl')
+    model_path = "model.pkl"
+    if not os.path.exists(model_path):
+        url = "https://drive.google.com/file/d/1kg-_asnuaimCyNIelQxdjPCH9vpuZvJ4/view?usp=sharing"
+        r = requests.get(url)
+        with open(model_path, "wb") as f:
+            f.write(r.content)
+    return joblib.load(model_path)
 
 model = load_model()
 
