@@ -32,7 +32,7 @@ ecommerce-sales-forecasting/
 ├── app/                        # Streamlit web app
 │   ├── app.py
 │   ├── requirements.txt
-│   └── sales_forecaster_xgb_v1.0.pkl
+│   └── sales_forecaster_xgb_v1.0.zip
 │
 ├── data/
 │   └── processed/

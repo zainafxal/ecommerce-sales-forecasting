@@ -1,20 +1,20 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import gdown
-import os
-import requests
+import zipfile
 from datetime import datetime
 
 # --- Load Model ---
 @st.cache_resource
 def load_model():
     model_path = "sales_forecaster_xgb_v1.0.pkl"
+    zip_path = "sales_forecaster_xgb_v1.0.zip"
+    # If Model file (.pkl) file dosen't exist, extract from zip
     if not os.path.exists(model_path):
-        file_id = "1kg-_asnuaimCyNIelQxdjPCH9vpuZvJ4"
-        url = f"https://drive.google.com/uc?id={file_id}"
-        gdown.download(url, model_path, quiet=False)
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall(".")
     return joblib.load(model_path)
 
 model = load_model()
