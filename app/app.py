@@ -7,7 +7,7 @@ from datetime import datetime
 # --- Load Model ---
 @st.cache_resource
 def load_model():
-    return joblib.load('sales_forecaster_xgb_v1.0.pkl')
+    return joblib.load('model.pkl')
 
 model = load_model()
 
