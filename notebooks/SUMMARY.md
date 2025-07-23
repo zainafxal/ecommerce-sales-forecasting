@@ -155,9 +155,3 @@ This file summarizes the key steps and logic in the main notebook (`ecommerce-sa
 - **Ask “Why?” at Every Step:** The best data scientists always justify their actions.
 - **Document Everything:** Good documentation (like this summary) is as important as code.
 - **Focus on Business Value:** The end goal is always to help the business make better decisions.
-
----
-
-**File placement:**  
-- Place this file as `notebooks/SUMMARY.md` or `notebooks/project_summary.md`  
-- (You can also link to it from your main README.md for easy access.)
