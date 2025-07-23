@@ -1,21 +1,13 @@
-import os
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import zipfile
 from datetime import datetime
 
 # --- Load Model ---
 @st.cache_resource
 def load_model():
-    model_path = "sales_forecaster_xgb_v1.0.pkl"
-    zip_path = "sales_forecaster_xgb_v1.0.zip"
-    # If Model file (.pkl) file dosen't exist, extract from zip
-    if not os.path.exists(model_path):
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-            zip_ref.extractall(".")
-    return joblib.load(model_path)
+    return joblib.load('sales_forecaster_xgb_v1.0.pkl')
 
 model = load_model()
 

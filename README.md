@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Sales Forecasting — ML Pipeline & Web App
 
-[![Streamlit App](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?logo=streamlit)](YOUR_STREAMLIT_APP_LINK_HERE)
+[![Streamlit App](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?logo=streamlit)](https://huggingface.co/spaces/zainafxal/ecommerce-sales-forecasting)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
@@ -32,7 +32,7 @@ ecommerce-sales-forecasting/
 ├── app/                        # Streamlit web app
 │   ├── app.py
 │   ├── requirements.txt
-│   └── sales_forecaster_xgb_v1.0.zip
+│   └── sales_forecaster_xgb_v1.0.pkl
 │
 ├── data/
 │   └── processed/
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
 ## **Live Demo**
 
-👉 [Try the Streamlit App Here!](YOUR_STREAMLIT_APP_LINK_HERE)
+👉 [Try the Streamlit App Here!](https://huggingface.co/spaces/zainafxal/ecommerce-sales-forecasting)
 
 ---
 
