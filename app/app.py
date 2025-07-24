@@ -173,13 +173,40 @@ if st.button("🔮 Predict Sales Quantity"):
 
     st.markdown(
         f"""
-            <div style="background-color:#d4edda; padding:15px; border-radius:5px; border-left:5px solid #28a745;">
-                <small>This {pred_quantity:.2f} is the expected number of units you are likely to sell for the given product and transaction details.<br>
-                For example, if the predicted quantity is 8.5, it means you can expect to sell around 8 or 9 units in this scenario.</small>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        <style>
+            .custom-info-box {{
+                padding: 15px;
+                border-radius: 5px;
+                border-left: 5px solid;
+                font-size: 0.9em;
+            }}
+            /* Light mode */
+            @media (prefers-color-scheme: light) {{
+                .custom-info-box {{
+                    background-color: #d4edda;
+                    border-color: #28a745;
+                    color: #155724;
+                }}
+            }}
+            /* Dark mode */
+            @media (prefers-color-scheme: dark) {{
+                .custom-info-box {{
+                    background-color: #1e3b2f;
+                    border-color: #28a745;
+                    color: #c9f7ce;
+                }}
+            }}
+        </style>
+
+        <div class="custom-info-box">
+            <small>
+            This {pred_quantity:.2f} is the expected number of units you are likely to sell for the given product and transaction details.<br>
+            For example, if the predicted quantity is 8.5, it means you can expect to sell around 8 or 9 units in this scenario.
+            </small>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.markdown("<br>", unsafe_allow_html=True)
 
