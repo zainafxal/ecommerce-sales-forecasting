@@ -10,6 +10,8 @@
 This project demonstrates a complete, end-to-end **machine learning pipeline** for forecasting product sales in an e-commerce setting.  
 It includes **in-depth EDA, feature engineering, model training/tuning, and a deployed Streamlit web app** for interactive predictions.
 
+🎥 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7355669899991482372?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 <small>[📄 Click here for a detailed section-wise summary of the notebook and app.](notebooks/SUMMARY.md)</small>
 ---
 
