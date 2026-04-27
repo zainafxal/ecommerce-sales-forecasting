@@ -1,0 +1,43 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+ENV/
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+.vercel/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local build and temp files
+tmp/
+temp/
+*.tmp
+
+
+agent.md
