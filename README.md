@@ -16,7 +16,7 @@ https://zainafxal-ecommerce-sales-api.hf.space/
 https://zainafxal-ecommerce-sales-api.hf.space/docs
 
 🔗 **Frontend (React + Vercel)**  
-https://your-vercel-app-url.vercel.app
+https://ecommerce-sales-forecasting.vercel.app/
 
 <br>
 
